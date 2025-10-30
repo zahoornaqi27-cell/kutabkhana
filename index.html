@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کتب خانہ - اردو، ہندی، پنجابی کتابیں</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ہیڈر -->
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <h1>📚 کتب خانہ</h1>
+                <p>اردو، ہندی، پنجابی کتابیں</p>
+            </div>
+
+            <!-- سرچ بار -->
+            <div class="header-search">
+                <input type="text" 
+                       class="search-input" 
+                       placeholder="کتاب، مصنف یا صنف تلاش کریں..."
+                       onkeyup="searchBooks()"
+                       id="searchInput">
+                <button class="search-btn" onclick="searchBooks()">🔍</button>
+            </div>
+
+            <!-- نیویگیشن -->
+            <ul class="nav-links">
+                <li><a href="index.html">ہوم</a></li>
+                
+                <!-- زبانیں ڈراپ ڈاؤن -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">زبانیں ▾</a>
+                    <div class="dropdown-content">
+                        <a href="urdu-books.html">اردو کتابیں</a>
+                        <a href="hindi-books.html">ہندی کتابیں</a>
+                        <a href="punjabi-books.html">پنجابی کتابیں</a>
+                        <a href="english-books.html">انگریزی کتابیں</a>
+                    </div>
+                </li>
+
+                <!-- اصناف ڈراپ ڈاؤن -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">اصناف ▾</a>
+                    <div class="dropdown-content">
+                        <a href="novels.html">ناول</a>
+                        <a href="short-stories.html">افسانے</a>
+                        <a href="poetry.html">شاعری</a>
+                        <a href="criticism.html">تنقید</a>
+                        <a href="biography.html">سوانح عمری</a>
+                        <a href="history.html">تاریخ</a>
+                    </div>
+                </li>
+
+                <!-- مصنفین -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">مصنفین ▾</a>
+                    <div class="dropdown-content">
+                        <a href="urdu-authors.html">اردو مصنفین</a>
+                        <a href="hindi-authors.html">ہندی مصنفین</a>
+                        <a href="punjabi-authors.html">پنجابی مصنفین</a>
+                    </div>
+                </li>
+
+                <li><a href="about.html">تعارف</a></li>
+                <li><a href="contact.html">رابطہ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ہیرو سیکشن -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>خوش آمدید! کتب خانہ میں</h1>
+            <p>ہزاروں اردو، ہندی اور پنجابی کتابیں مفت ڈاؤنلوڈ کریں</p>
+            
+            <!-- مرکزی سرچ -->
+            <div class="hero-search">
+                <input type="text" 
+                       class="hero-search-input" 
+                       placeholder="جیسے: غالب، پریم چند، امرتا پریتم..."
+                       onkeyup="searchBooks()"
+                       id="heroSearchInput">
+                <button class="hero-search-btn" onclick="searchBooks()">🔍 کتابیں تلاش کریں</button>
+            </div>
+
+            <!-- فوری لنکس -->
+            <div class="quick-links">
+                <a href="popular.html" class="quick-link">📈 مقبول کتابیں</a>
+                <a href="new.html" class="quick-link">🆕 نئی کتابیں</a>
+                <a href="classic.html" class="quick-link">⭐ کلاسیکل کتابیں</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- زمرہ وار کتابیں -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">کتابوں کے اقسام</h2>
+            
+            <div class="categories-grid">
+                <!-- ناول -->
+                <div class="category-card">
+                    <div class="category-icon">📖</div>
+                    <h3>ناول</h3>
+                    <p>مکمل ناول پڑھیں اور ڈاؤنلوڈ کریں</p>
+                    <a href="حرف-وفا.html" class="category-btn">مزید دیکھیں</a>
+                </div>
+
+                <!-- افسانے -->
+                <div class="category-card">
+                    <div class="category-icon">✍️</div>
+                    <h3>افسانے</h3>
+                    <p>چھوٹے افسانے اور کہانیاں</p>
+                    <a href="more.html" class="category-btn">مزید دیکھیں</a>
+                </div>
+
+                <!-- شاعری -->
+                <div class="category-card">
+                    <div class="category-icon">🎭</div>
+                    <h3>شاعری</h3>
+                    <p>غزل، نظم، قطعہ اور رباعی</p>
+                    <a href="poetry.html" class="category-btn">مزید دیکھیں</a>
+                
+                </div>
+
+                <!-- تنقید -->
+                <div class="category-card">
+                    <div class="category-icon">📝</div>
+                    <h3>تنقید</h3>
+                    <p>ادبی تنقید اور مضامین</p>
+                    <a href="criticism.html" class="category-btn">مزید دیکھیں</a>
+                </div>
+
+                <!-- سوانح -->
+                <div class="category-card">
+                    <div class="category-icon">👤</div>
+                    <h3>سوانح عمری</h3>
+                    <p>مشہور شخصیات کی زندگیاں</p>
+                    <a href="biography.html" class="category-btn">مزید دیکھیں</a>
+                </div>
+
+                <!-- تاریخ -->
+                <div class="category-card">
+                    <div class="category-icon">🏛️</div>
+                    <h3>تاریخ</h3>
+                    <p>تاریخی کتابیں اور واقعات</p>
+                    <a href="history.html" class="category-btn">مزید دیکھیں</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- مقبول کتابیں -->
+    <section class="featured-books">
+        <div class="container">
+            <h2 class="section-title">مقبول کتابیں</h2>
+            
+            <div class="books-grid" id="featuredBooks">
+                <!-- کتابیں JavaScript سے لوڈ ہوں گی -->
+            </div>
+        </div>
+    </section>
+
+    <!-- زبانوں کے لحاظ سے -->
+    <section class="languages-section">
+        <div class="container">
+            <h2 class="section-title">زبانیں</h2>
+            
+            <div class="languages-grid">
+                <div class="language-card">
+                    <h3>📚 اردو</h3>
+                    <p>1000+ کتابیں</p>
+                    <a href="urdu-books.html" class="lang-btn">دیکھیں</a>
+                </div>
+
+                <div class="language-card">
+                    <h3>📚 हिन्दी</h3>
+                    <p>800+ पुस्तकें</p>
+                    <a href="hindi-books.html" class="lang-btn">देखें</a>
+                </div>
+
+                <div class="language-card">
+                    <h3>📚 ਪੰਜਾਬੀ</h3>
+                    <p>500+ ਪੁਸਤਕਾਂ</p>
+                    <a href="punjabi-books.html" class="lang-btn">ਦੇਖੋ</a>
+                </div>
+
+                <div class="language-card">
+                    <h3>📚 English</h3>
+                    <p>300+ Books</p>
+                    <a href="english-books.html" class="lang-btn">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- سرچ رزلٹس -->
+    <section class="search-results-section" id="searchResultsSection">
+        <div class="container">
+            <h2 class="section-title" id="searchResultsTitle">تلاش کے نتائج</h2>
+            <div id="searchResults" class="books-grid">
+                <!-- سرچ رزلٹس یہاں آئیں گے -->
+            </div>
+        </div>
+    </section>
+
+    <!-- فوٹر -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>کتب خانہ</h3>
+                <p>مفت ڈیجیٹل لائبریری</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>جلد لنکس</h3>
+                <a href="index.html">ہوم</a>
+                <a href="about.html">تعارف</a>
+                <a href="contact.html">رابطہ</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>اصناف</h3>
+                <a href="novels.html">ناول</a>
+                <a href="poetry.html">شاعری</a>
+                <a href="short-stories.html">افسانے</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>زبانیں</h3>
+                <a href="urdu-books.html">اردو</a>
+                <a href="hindi-books.html">ہندی</a>
+                <a href="punjabi-books.html">پنجابی</a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 کتب خانہ. تمام حقوق محفوظ ہیں.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
